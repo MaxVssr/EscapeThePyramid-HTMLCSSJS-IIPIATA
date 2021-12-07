@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+  
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffdfb6;
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+  
+.home {
+    height: 100vh;
+    background: url(./Images/Home.jpg) no-repeat center center fixed;
+    position: relative;
+    background-size: cover;
+}
+  
+.spelregels {
+    height: 100vh;
+    background: url(./Images/Spelregels.jpg) no-repeat center center fixed;
+    position: relative;
+    background-size: cover;
+}
+  
+.thema {
+    height: 100vh;
+    background: url(./Images/Thema.jpg) no-repeat center center fixed;
+    position: relative;
+    background-size: cover;
+}
+  
+.rmo {
+    height: 100vh;
+    background: url(./Images/RMO.jpg) no-repeat center center fixed;
+    position: relative;
+    background-size: cover;
+}
+  
+.overmij {
+    height: 100vh;
+    background: url(./Images/Overmij.jpg) no-repeat center center fixed;
+    position: relative;
+    background-size: cover;
+}
+  
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5rem;
+    z-index: 1;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    justify-content: space-between;
+    background-color: #036194;
+    color: white;
+    min-height: 7rem;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+nav .logo{
+    margin-left: 5%;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    padding-top: 1.9rem;
+    padding-bottom: 1.9rem;
+  }
+
+.nav-btn {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #036194;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    right: 0;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+nav .nav-btn:hover {
+    background-color: #1ea1e7;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+.navbar li {
+    text-align: center;
+}
+
+.navbar li a {
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    background-color: #1ea1e7;
+}
+
+.navbar.active {
+    display: flex;
+}
+
+main h2 {
+    font-size: 3rem;
+    padding-top: 2rem;
+    overflow: hidden;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+main article section p {
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.55;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.info p, .inhoud p {
+    text-align: center;
+}
+
+.regels p {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+main article .ikzelf .me {
+    padding-top: 3rem;
+}
+
+#button {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+    background-color: #036194;
+    border: 0.5rem solid #1ea1e7;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+#button:hover {
+    cursor: pointer;
+}
+  
+#button::before {
+    content: "Let's Go!";
+    width: 100%;
+    height: 100%;
+    background-color: #1ea1e7;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all;
+}
+  
+#button:hover::before {
+    top: 0%;
+}
+  
+#codeButton {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+    background-color: #036194;
+    border: 0.5rem solid #1ea1e7;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+#bordCode {
+    position: relative;
+    display: block;
+    margin : 0 auto;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+}
+  
+.checkout form {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin: 30px auto;
+}
+  
+.formulier h2 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    overflow: hidden;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+form label {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+}
+  
+form input {
+    color: black;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+}
+  
+#betaalmethode {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    padding: 1.2rem;
+}
+  
+.codeinvullen {
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.55;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+  
+.foto > h2 {
+    padding-bottom: 2.5rem;
+}
+  
+figure > figcaption {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 6rem;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+  
+section > figure > img {
+    width: 30rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+
+main article section #informatie {
+    border: 0.1rem solid black;
+}
+
+.iframe {
+    text-align: center;
+    margin-top: 5rem;
+    width: 100%;
+    overflow: hidden;
+}
+  
+.footer {
+    background-color: #fbeedb;
+    padding: 2rem;
+    border-top: 0.3rem solid #036194;
+    margin-top: 3.5rem;
+    bottom: 0;
+}
+
+.footer-content {
+    max-width: 130rem;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.footer p {
+    font-size: 1.5rem;
+}
+
+.footer-content > p {
+    color: #1ea1e7;
+    font-size: 2rem;
+    display: block;
+    float: right;
+}
+
+.footer ul li {
+    list-style: none;
+} 
+
+.footer ul li a {
+    text-decoration: none;
+    color: #1ea1e7;
+}
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+
+@media (min-width: 768px) {
+    .regels p, .info p, .inhoud p {
+        font-size: 2rem;
+    }
+
+    main article section p {
+        font-size: 2rem;
+    }
+
+    section > figure > img {
+        width: 45rem;
+    }
+
+    figure > figcaption {
+        font-size: 2rem;
+    }
+
+    nav .logo{
+        font-size: 2.2rem;
+        padding-bottom: 1.9rem;
+        padding-top: 1.9rem;
+    }
+
+    .nav-btn {
+        font-size: 1.8rem;
+    }
+
+    .navbar li a {
+        font-size: 2rem;
+    }
+
+    .footer ul, .footer ul p, .footer ul li {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .codeinvullen {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 4.25rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .navbar li a {
+        font-size: 2.2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    nav .logo {
+        font-size: 2.5rem;
+        padding-top: 1.75rem;
+        padding-bottom: 1.75;
+    }
+
+    main h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .nav-btn {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    main article section p {
+        font-size: 2rem;
+    }
+
+    section > figure > img {
+        width: 60rem;
+    }
+
+    .codeinvullen {
+        font-size: 2rem;
+    }
+
+    form label {
+        font-size: 2rem;
+        margin-left: 2.5rem;
+    }
+
+    .footer ul, .footer ul p, .footer ul li {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}

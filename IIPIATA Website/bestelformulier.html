@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontsnap uit de piramide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="thema">
+      <div class="overlay"></div>
+      <h1>Bestelformulier</h1>
+      <nav id="nav" class="navigation">
+        <a class="logo" href="index.html">Ontsnap uit de piramide</a>
+        <button class="nav-btn">Menu</button>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="spelregels.html">Spelregels</a></li>
+          <li><a class="active" href="thema.html">Thema</a></li>
+          <li><a href="rmo.html">RMO</a></li>
+          <li><a href="overmij.html">Over mij</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="formulier">
+        <h2>Bestelformulier</h2>
+        <form>
+          <label for="name">Naam</label>
+          <input id="name" type="text" placeholder="Naam">
+          
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="E-mail">
+          
+          <label for="address">Adres</label>
+          <input id="address" type="text" placeholder="Adres">
+          
+          <label for="postcode">Postcode</label>
+          <input id="postcode" type="text" placeholder="Postcode">
+          
+          <label for="city">Stad</label>
+          <input id="city" type="text" placeholder="Stad">
+          
+          <label for="phonenumber">Telefoonnummer</label>
+          <input id="phonenumber" type="number" placeholder="Telefoonnummer">
+          
+          <label>Betaalmethode</label>
+          <select name="betaalmethode" id="betaalmethode">
+            <option value="">Kies een betaalmethode</option>
+              <option value="IDeal">IDeal</option>
+              <option value="Paypal">Paypal</option>
+              <option value="AcceptGiro">AcceptGiro</option>
+          </select>
+        </form>
+      </section>  
+      
+      <button id="button" class="button" onclick="location.href='index.html';">Plaats Bestelling!</button>
+
+      <footer class="footer">
+        <p>Websites die ik heb gebruikt: </p>
+        <p>Artikelen is overgenomen voor een schoolproject.</p>
+        <ul>
+          <li><a href="https://inspiratie.corendon.nl/weetjes-egypte/">Link naar artikel Corendon.nl</a></li>
+          <li><a href="https://wikikids.nl/">Link naar Wikikids</a></li>
+          <li><a href="https://nl.wikipedia.org/">Link naar Wikipedia</a></li>
+          <li><a href="https://www.rmo.nl/">Link naar de website van het RMO</a></li>
+        </ul>
+        <div class="footer-content">
+          <p>Max Visser, s1113893</p>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>          
